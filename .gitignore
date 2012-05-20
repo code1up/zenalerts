@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 # node
+=======
+>>>>>>> 8e747918597188675e32d378bfd2362a05115e24
 lib-cov
 *.seed
 *.log
@@ -13,8 +16,12 @@ logs
 results
 
 node_modules
+<<<<<<< HEAD
 npm-debug.log
 
 # enyo
 /build
 
+=======
+npm-debug.log
+>>>>>>> 8e747918597188675e32d378bfd2362a05115e24

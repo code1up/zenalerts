@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 bootplate
 =========
 
@@ -21,3 +22,9 @@ results
 node_modules
 npm-debug.log
 
+=======
+zenalerts
+=========
+
+Zen Internet Alerts
+>>>>>>> 8e747918597188675e32d378bfd2362a05115e24
