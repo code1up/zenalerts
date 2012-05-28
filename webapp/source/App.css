@@ -1,10 +1,77 @@
 /*
-	Put anything you reference with "url()" in ../assets/
-	This way, you can minify your application, and just remove the "source" folder for production
-*/
+ * App
+ */
 #app {
-	margin: 16px;
-	border-radius: 4px;
+	// margin: 16px;
+	// border-radius: 4px;
 	background-color: silver;
-	padding: 16px;
+	// padding: 16px;
+}
+
+/*
+ * AlertSettingsSlideable
+ */
+.zen-alert-settings {
+    position: absolute;
+    z-index: 1;
+    height: 80%;
+    width: 320px;
+    background-color: lightgray;
+    box-shadow: 10px 10px 5px #666;
+}
+
+.zen-alert-settings-groupbox {
+    padding: 10px;
+}
+
+/* TODO: avoid > * */
+.zen-alert-settings-groupbox > * {
+    padding: 10px;
+    min-height: 30px;
+    line-height: 30px;
+}
+
+/* TODO: avoid > * */
+.zen-alert-settings-groupbox > * > * > * {
+    display: inline-block;
+}
+
+/*
+ * LabeledControl
+ */
+.zen-labeled-control-icon {
+    vertical-align: middle;
+    padding-right: 8px;
+    min-width: 32px;
+}
+
+.zen-labeled-control-input {
+    float: right;
+}
+
+/*
+ * AlertList
+ */
+.zen-alert-list-entry {
+    height: 80px;
+}
+
+.zen-alert-list-entry-title {
+    font-weight: bold;
+    font-size: large;
+    color: #00928F;
+    margin-left: 10px;
+}
+
+.zen-alert-list-entry-content-snippet {
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.zen-alert-list-entry-who-when {
+    font-size: medium;
+    color: darkgray;
+    /* top, right, bottom, left */
+    /* padding: 0px 0px 0px 10px; */
+    margin-left: 10px;
 }

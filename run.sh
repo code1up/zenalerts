@@ -1,0 +1,2 @@
+nodemon ./server/server.js
+
