@@ -1,27 +1,8 @@
-<<<<<<< HEAD
-# node
-=======
->>>>>>> 8e747918597188675e32d378bfd2362a05115e24
-lib-cov
-*.seed
-*.log
-*.csv
-*.dat
-*.out
-*.pid
-*.gz
-
-pids
-logs
-results
-
-node_modules
-<<<<<<< HEAD
-npm-debug.log
+# node.js
+node_modules/
 
 # enyo
-/build
+build/
+enyo/
+lib/
 
-=======
-npm-debug.log
->>>>>>> 8e747918597188675e32d378bfd2362a05115e24

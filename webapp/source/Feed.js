@@ -1,5 +1,18 @@
 (function() {
 
+    var _makeEntry = function(rawEntry) {
+        var newEntry = {
+            title: rawEntry.title,
+            author: rawEntry.author || "Anon",
+            publishedDate: new Date(rawEntry.publishedDate),
+            contentSnippet: rawEntry.contentSnippet,
+            content: rawEntry.content,
+            categories: rawEntry.categories
+        };
+
+        return newEntry;
+    };
+
     enyo.kind({
         name: "zen.Feed",
         kind: "enyo.Control",
@@ -9,7 +22,7 @@
         published: {
             url: "",
             entries: [],
-            makeItem: this.defaultItemFactory
+            makeEntry: _makeEntry
         },
 
         events: {
@@ -90,7 +103,7 @@
             var rawEntries = response.responseData.feed.entries;
 
             this.clearEntries();
-            enyo.forEach(rawEntries, this.makeItem, this);
+            enyo.forEach(rawEntries, this.addEntry, this);
 
             this.bubble("onLoaded", {
                 data: this.entries
@@ -101,17 +114,10 @@
             this.entries = [];
         },
 
-        makeEntry: function(entry) {
-            var newEntry = {
-                title: entry.title,
-                author: entry.author || "Anon",
-                publishedDate: new Date(entry.publishedDate),
-                contentSnippet: entry.contentSnippet,
-                content: entry.content,
-                categories: entry.categories
-            };
+        addEntry: function(rawEntry) {
+            var newEntry = this.makeEntry(rawEntry);
 
-           this.entries.push(newEntry);
+            this.entries.push(newEntry);
         }
     });
 

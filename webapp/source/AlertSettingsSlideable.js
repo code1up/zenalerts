@@ -102,8 +102,8 @@
 
         classes: "zen-alert-settings",
 
-        value: -100,
-        min: -100,
+        value: -120,
+        min: -120,
         unit: "%",
 
         components: [

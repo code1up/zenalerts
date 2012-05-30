@@ -1,5 +1,12 @@
 (function() {
 
+    /*
+    var _tooltip = {
+        kind: "onyx.Tooltip",
+        content: "Tooltip"
+    };
+    */
+
     // TODO: create a new control
     var _searchInput = {
         kind: "onyx.InputDecorator",
@@ -56,6 +63,8 @@
 
     var _onTapGrabber = function() {
         enyo.log("zen.App::onTapGrabber");
+
+        // _tooltip.requestShow();
         this.$.alertSettingsSlideable.toggleMinMax();
     };
 
@@ -67,6 +76,7 @@
 
         components: [
             _toolbar,
+            // _tooltip,
             _alertSettings,
             _alertList
         ],

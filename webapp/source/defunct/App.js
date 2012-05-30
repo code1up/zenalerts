@@ -46,7 +46,7 @@
     
     var slideable =
         { kind: "enyo.Slideable", floating: true, name: "leftPanel", value: -100, min: -100, unit: "%",
-            style: "position: absolute; width: 300px; height: 500px; background-color: #D8D8D8; padding: 10px;",
+            style: "position: absolute; width: 360px; height: 500px; background-color: #D8D8D8; padding: 10px;",
             
             components: [
                 zenAlertNavigator,
