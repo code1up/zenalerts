@@ -3,6 +3,6 @@ node_modules/
 
 # enyo
 build/
-enyo/
-lib/
+# enyo/
+# lib/
 
